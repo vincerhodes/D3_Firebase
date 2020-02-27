@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Firebase Menu</title>
+  </head>
+  <body>
+
+    <div include="/html-templates/navbar.html"></div>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-12 col-lg-2">
+              <div include="html-templates/leftnav.html"></div>
+            </div>
+            <div class="col-12 col-lg-8">
+              <div class="canvas"></div>
+            </div>
+            <div class="col-12 col-lg-2">
+                <div include="html-templates/rightnav.html"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/lib/include-html.js"></script>
+    <script>includeHTML();</script>
+
+    <script src="js/lib/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/lib/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAFgZgUyJBL16h7gnf2StlZRdxLmH6THUc",
+        authDomain: "udemy-d3-firebase-6fab8.firebaseapp.com",
+        databaseURL: "https://udemy-d3-firebase-6fab8.firebaseio.com",
+        projectId: "udemy-d3-firebase-6fab8",
+        storageBucket: "udemy-d3-firebase-6fab8.appspot.com",
+        messagingSenderId: "367759504879",
+        appId: "1:367759504879:web:80d8a55209e85190ed721a",
+        measurementId: "G-BDGJQLYNVY"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+
+      const db = firebase.firestore();
+      // db.settings({ timestampsInSnapshots: true });
+    </script>
+
+    <script src="js/lib/d3.v5.min.js"></script>
+
+    <script src="js/firebase_menu.js"></script>
+
+  </body>
+</html>

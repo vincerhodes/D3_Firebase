@@ -1,0 +1,41 @@
+h2, p {
+	margin: 10px 0;
+}
+header {
+	margin-bottom: 40px;
+}
+
+.tooltip {
+	position: absolute;
+	text-align: center;
+	font: 14px sans-serif;
+	background: white;
+	border-radius: 5px;
+	pointer-events: none;
+	box-shadow: -3px 3px 15px #888;
+	padding: 10px;
+	border: 0px;
+}
+
+/* circle bar css */
+path.arc {
+  opacity: 0.9;
+  transition: opacity 0.5s;
+}
+
+path.arc:hover {
+  opacity: 0.7;
+}
+
+.axis line, .axis circle  {
+  stroke: #cccccc;
+  stroke-width: 1px
+}
+
+.axis circle {
+  fill: none;
+}
+
+.r.axis text {
+  text-anchor: end
+}

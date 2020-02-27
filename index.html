@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <title>D3 Udemy Course</title>
+  </head>
+  <body>
+    
+    <div include="/html-templates/navbar.html"></div>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-12 col-lg-2">
+              <div include="html-templates/leftnav.html"></div>
+            </div>
+            <div class="col-12 col-lg-8">
+              <svg width="400" height="400">
+                <circle cx='150' cy='150' r='150' fill='purple'></circle>
+                <circle cx='100' cy='100' r='20' fill='blue'></circle>
+                <circle cx='200' cy='180' r='20' fill='grey'></circle>
+                <circle cx='175' cy='130' r='20' fill='grey'></circle>
+                <circle cx='125' cy='170' r='20' fill='grey'></circle>
+                <line x1='100' y1='130' x2='200' y2='250' stroke="red" stroke-width='3'></line>
+                <path d="M180 0 L20 200 L150 20 L100 300" stroke="red" fill="green"></path>
+              </svg>
+              <svg width="400" height="400">
+                <circle cx='150' cy='150' r='150' fill='purple'></circle>
+                <path d="M100 200 L200 200 L150 100 Z" stroke="red" fill="green"></path>
+                <circle cx='100' cy='100' r='20' fill='blue'></circle>
+                <circle cx='200' cy='180' r='20' fill='grey'></circle>
+                <circle cx='175' cy='130' r='20' fill='grey'></circle>
+                <circle cx='125' cy='170' r='20' fill='grey'></circle>
+              </svg>
+              <svg width="400" height="400">
+                <path d="M0 400 L400 400 L200 0 C 200 0 400 400 0 400" fill="green"></path>
+                <circle cx='200' cy='200' r='5' fill='grey'></circle>
+              </svg>
+            </div>
+            <div class="col-12 col-lg-2">
+                <div include="html-templates/rightnav.html"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/lib/include-html.js"></script>
+    <script>includeHTML();</script>
+
+    <script src="js/lib/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/lib/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/d3.v5.min.js"></script>
+    <script src="js/lib/topojson.v3.min.js"></script>
+
+    <script src="js/index.js"></script>
+    
+  </body>
+</html>
